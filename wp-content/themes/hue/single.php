@@ -14,20 +14,22 @@
         
           </div>
           <div class="postDeets">
-             <div class="postDate">
+             <div class="postDate clearfix">
                   <p class="day"> <?php echo get_the_date("j"); ?> </p>
                   <p class="month"> <?php echo get_the_date("M"); ?> </p>
             </div>
-            <div class="specTags">
-  
-              <?php
-              if(get_the_tag_list()) {
-                  echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
-              }
-              ?>
+          </div>  
+            
+          <div class="specTags">
 
-            </div>
+            <?php
+            if(get_the_tag_list()) {
+                echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
+            }
+            ?>
+
           </div>
+        
 
           <div class="entry-content">
             <?php the_content(); ?>

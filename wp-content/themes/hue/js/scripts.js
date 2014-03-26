@@ -16,6 +16,21 @@ var App = {};
 		}(document, 'script', 'facebook-jssdk'));
 	
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+	
+		// listen for a click on the 
+		$('.burger').on('click',function(e) {
+			e.preventDefault();
+			$('ul.menu').slideToggle(100);
+		})
+
+		// flexslider
+		var slider = $('.flexslider');
+		// check if there is even a flexslider on the page first
+		if(slider.length) {
+			// the fleixify it
+			slider.flexslider();
+		}
+
 	}//end app.init
 
 $(function(){

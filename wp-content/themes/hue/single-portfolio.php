@@ -5,7 +5,20 @@
         <?php
         if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
           <h2><?php the_title(); ?></h2>
-          
+        
+          <div class="pretty">
+    				<div class="flexslider">
+              <ul class="slides">
+                <?php while(has_sub_field("images")) : ?>
+                  <li>
+                    <?php $image = get_sub_field("image"); ?>
+                    <img src=" <?php echo $image["sizes"]["large"] ?>" alt="">
+                  </li>
+                  <?php endwhile; // end images loop?>
+                </ul>
+              </div>
+          </div>
+
           <div class="theDirty">
             <?php the_content(); ?>
 
@@ -38,18 +51,6 @@
             </ul>         
           </div>
 
-          <div class="pretty">
-    				<div class="flexslider">
-              <ul class="slides">
-                <?php while(has_sub_field("images")) : ?>
-                  <li>
-                    <?php $image = get_sub_field("image"); ?>
-                    <img src=" <?php echo $image["sizes"]["large"] ?>" alt="">
-                  </li>
-                  <?php endwhile; // end images loop?>
-                </ul>
-              </div>
-          </div>
 
 
 

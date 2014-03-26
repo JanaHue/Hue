@@ -22,18 +22,19 @@
 				<h6 class="author"> Written by <?php the_author_posts_link(); ?> </h6>
 				<a href="https://twitter.com/jana_hue" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @jana_hue</a>
 			</div>
+			<div class="specTags">
+			    <?php
+			    if(get_the_tag_list()) {
+			        echo get_the_tag_list('<ul class="clearfix"><li>','</li><li>','</li></ul>');
+			    }
+			    ?>
+			</div>
 			<div class="postDeets">
 			   <div class="postDate">
 			        <p class="day"> <?php echo get_the_date("j"); ?> </p>
 			        <p class="month"> <?php echo get_the_date("M"); ?> </p>
-			  </div>
-			  <div class="specTags">
-			    <?php
-			    if(get_the_tag_list()) {
-			        echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
-			    }
-			    ?>
-			  </div>
+			   </div>  
+			</div>
 			</div>
 
 			<section class="entry-content">

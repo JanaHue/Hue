@@ -213,8 +213,11 @@ html {
   background:white;
   padding: 30px 40px;
 }
+.page-id-281 .full {
+  margin-top: 70px;
+}
 
-.full.contact,  .contact h2, .page-id-281 .full, .page-id-281 .full h2 {
+.full.contact,  .contact h2, .page-id-281 .full h2 {
   margin: 35px 0;
 }
 
@@ -314,9 +317,11 @@ span.anchor {
   margin: 35px 0;
   img {
     border-radius: 50%;
-    position: absolute;
     top: 40px;
     right: 40px;
+    width: 36%;
+    float: right;
+    margin-top: 20px;
   }
   p{
     &:first-child {
@@ -563,30 +568,42 @@ span.anchor {
                   Post deets 
    ========================================================================== */
 
+
+.single-post .specTags {
+  position: absolute;
+  top: 200px;
+  left: -230px;
+  width: 200px;
+}
+
+.specTags {
+     ul{
+        padding: 0;
+        list-style: none;
+        text-align: right;
+        clear: both;
+        li {
+          margin-bottom: 7px;
+
+         a {
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          background:$accent1;
+          color:$white;
+          padding: 3px 5px;
+          border-radius: 1px
+      }
+    }
+  }  
+}
+   
+
+
 .postDeets {
   position: absolute;   
   top: 70px; 
   left: -230px; 
   width: 200px;
-  }
-    .specTags {
-       ul{
-          padding: 0;
-          list-style: none;
-          text-align: right;
-          clear: both;
-          li {
-            margin-bottom: 7px;
-           a {
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            background:$accent1;
-            color:$white;
-            padding: 3px 5px;
-            border-radius: 1px
-        }
-      }
-    }  
   }
     .postDate {
       width: 100px;
@@ -695,7 +712,7 @@ span.anchor {
 
 .pretty {
   width: 65%;
-  float: left;
+  float: right;
   .flexslider {
     border-radius: 2px;
   }
@@ -708,8 +725,8 @@ ul.links {
     }
   li {
     padding: 0;
-    width: 50%;
-    float: left;
+    display: inline-block;
+    margin-right: 10px;
     &:hover a, &:focus a{
       text-decoration: underline;
       svg {
@@ -811,6 +828,14 @@ ul.socialite {
     left: 0;
     right: 0;
     z-index: 9999;
+    a.burger {
+      color:white;
+      font-size: 20px;
+      position: absolute;
+      top:10px;
+      right:10px;
+      display: none;
+    }
   }
 
   ul.menu {

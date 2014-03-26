@@ -21,17 +21,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>!window.jQuery && document.write('<script src="<?php bloginfo('template_directory');?>/js/jQuery.js"><\/script>')</script>
 	<script src="<?php bloginfo('stylesheet_directory');?>/js/scripts.js"></script>
-  
+
+
 
   <!-- //linking flexslider -->
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/flexslider.css" type="text/css">
   <script src="<?php bloginfo('template_directory');?>/js/jquery.flexslider.js"></script>
 
-  <script type="text/javascript" charset="utf-8">
-    $(window).load(function() {
-      $('.flexslider').flexslider();
-    });
-  </script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -41,6 +37,7 @@
     <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
       <?php include("logo.svg"); ?>
     </a>
+    <a href="#" class="burger">☰</a>
     <?php wp_nav_menu( array( 'container' => false, 'menu' => 'primary' ) ); ?>
   </div> <!-- /.innerWrapper -->
 </div><!--/.header-->

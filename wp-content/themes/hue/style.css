@@ -374,7 +374,11 @@ html {
   padding: 30px 40px;
 }
 
-.full.contact, .contact h2, .page-id-281 .full, .page-id-281 .full h2 {
+.page-id-281 .full {
+  margin-top: 70px;
+}
+
+.full.contact, .contact h2, .page-id-281 .full h2 {
   margin: 35px 0;
 }
 
@@ -472,9 +476,11 @@ span.anchor {
 }
 .full.about img {
   border-radius: 50%;
-  position: absolute;
   top: 40px;
   right: 40px;
+  width: 36%;
+  float: right;
+  margin-top: 20px;
 }
 .full.about p:first-child {
   width: 59%;
@@ -712,9 +718,9 @@ span.anchor {
 /* =============================================================================
                   Post deets 
    ========================================================================== */
-.postDeets {
+.single-post .specTags {
   position: absolute;
-  top: 70px;
+  top: 200px;
   left: -230px;
   width: 200px;
 }
@@ -735,6 +741,13 @@ span.anchor {
   color: #fff6f3;
   padding: 3px 5px;
   border-radius: 1px;
+}
+
+.postDeets {
+  position: absolute;
+  top: 70px;
+  left: -230px;
+  width: 200px;
 }
 
 .postDate {
@@ -836,7 +849,7 @@ span.anchor {
 
 .pretty {
   width: 65%;
-  float: left;
+  float: right;
 }
 .pretty .flexslider {
   border-radius: 2px;
@@ -851,8 +864,8 @@ ul.links svg {
 }
 ul.links li {
   padding: 0;
-  width: 50%;
-  float: left;
+  display: inline-block;
+  margin-right: 10px;
 }
 ul.links li:hover a, ul.links li:focus a {
   text-decoration: underline;
@@ -957,6 +970,14 @@ ul.socialite li .socIcon:hover, ul.socialite li .socIcon:focus {
   left: 0;
   right: 0;
   z-index: 9999;
+}
+.header a.burger {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
 }
 
 ul.menu {

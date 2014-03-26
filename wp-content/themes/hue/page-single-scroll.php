@@ -31,10 +31,11 @@ get_header();  ?>
       )); ?>
 
       <?php if ( $about->have_posts() ) while ( $about->have_posts() ) : $about->the_post(); ?>
-          <?php the_content(); ?>  
           <?php $headshot =  get_field('head_shot'); ?>
           <img src="<?php echo $headshot["sizes"]["pthumb"] ?>" alt="">
-
+          <div class="content">
+            <?php the_content(); ?>  
+          </div>
       <?php endwhile; ?>
 
     </div>
