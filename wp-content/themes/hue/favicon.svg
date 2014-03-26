@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="220.602px" height="205.895px" viewBox="0 0 220.602 205.895" enable-background="new 0 0 220.602 205.895" xml:space="preserve">
+  <circle class="circle" cx="152.1" cy="150.1" r="35"/>
+    <path  class="halfMoon" d="M104.602 185.973c-46 0-82.17-36.787-82.17-82.164c0-45.379 36.17-82.168 82.17-82.168V185.973z"/>
+    <path class="quarter" d="M198.002 104.004c0 1.3 0.2 3 0.2 3.996h-82.561V21.648 C161.602 21.6 198 58.6 198 104.004z"/>
+</svg>

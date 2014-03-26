@@ -1,0 +1,18 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Creative Director and Lead Developer: Jana Hue
+  Site: http://janahue.com
+  Twitter: @jana_hue
+  Location: Calgary
+
+/* THANKS */
+  Default theme from Wes Bos - http://wesbos.com 
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery
+  Software: WordPress
+ 
