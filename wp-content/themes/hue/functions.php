@@ -12,13 +12,10 @@ function theme_setup() {
 
 	// This theme uses post thumbnails
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size(120, 90, true);
-	add_image_size('pthumb', 400, 400, true);
-	add_image_size('square', 150, 150, true);
-	add_image_size('aspect3-4', 533, 400, true);
-	add_image_size('aspect4-3', 400, 533, true);
+	set_post_thumbnail_size(120, 120, true);
+	add_image_size('pthumb', 310, 310, true);
 	add_image_size('featured', 500);
-	add_image_size('custom1', 600, 720);
+	add_image_size('dBanner', 1000, 300, true);
 
 
 	// Add default posts and comments RSS feed links to head

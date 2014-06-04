@@ -4,32 +4,32 @@
 		<div class="touchIcons">
 			<ul class="socialite clearfix">
 				<li>
-					<a href="#">Facebook
+					<a href="https://www.facebook.com/jana.huebert" target="_blank">Facebook
 						<?php include("fb.svg"); ?>
 					</a>
 				</li>
 				<li>
-					<a href="#">Twitter
+					<a href="https://twitter.com/jana_hue" target="_blank">Twitter
 						<?php include("twitter.svg"); ?>
 					</a>
 				</li>
 				<li>
-					<a href="#">Pinterest
+					<a href="http://www.pinterest.com/janahu/" target="_blank">Pinterest
 						<?php include("pinterest.svg"); ?>
 					</a>
 				</li>
 				<li>
-					<a href="#">LinkedIn
+					<a href="http://www.linkedin.com/in/janahue" target="_blank">LinkedIn
 						<?php include("linked.svg"); ?>
 					</a>
 				</li>
 				<li>
-					<a href="#">GitHub
+					<a href="https://github.com/JanaHue" target="_blank">GitHub
 						<?php include("github.svg"); ?>
 					</a>
 				</li>
 				<li>
-					<a href="#">Mail
+					<a href="mailto:jana@janahue.com" target="_blank">Mail
 						<?php include("mail.svg"); ?>
 					</a>
 				</li>

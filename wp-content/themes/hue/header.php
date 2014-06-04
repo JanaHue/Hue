@@ -13,7 +13,7 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/mq.css">
-  <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
   
 	<?php	if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' );
    wp_head(); ?>
@@ -22,7 +22,7 @@
 	<script>!window.jQuery && document.write('<script src="<?php bloginfo('template_directory');?>/js/jQuery.js"><\/script>')</script>
 	<script src="<?php bloginfo('stylesheet_directory');?>/js/scripts.js"></script>
 
-
+Lato
 
   <!-- //linking flexslider -->
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/flexslider.css" type="text/css">

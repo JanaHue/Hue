@@ -27,7 +27,7 @@ var App = {};
 		var slider = $('.flexslider');
 		// check if there is even a flexslider on the page first
 		if(slider.length) {
-			// the fleixify it
+			// then flexify it
 			slider.flexslider();
 		}
 

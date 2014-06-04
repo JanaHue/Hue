@@ -21,7 +21,7 @@ get_header();  ?>
 <!-- /*====================================================================================
                               About Section Starts Here 
 ====================================================================================*/  -->
-<div class="section">
+<div class="section aboutMe">
   <div class="innerWrapper">
     <div class="full about clearfix">
       
@@ -31,6 +31,8 @@ get_header();  ?>
       )); ?>
 
       <?php if ( $about->have_posts() ) while ( $about->have_posts() ) : $about->the_post(); ?>
+          
+
           <?php $headshot =  get_field('head_shot'); ?>
           <img src="<?php echo $headshot["sizes"]["pthumb"] ?>" alt="">
           <div class="content">
@@ -41,6 +43,29 @@ get_header();  ?>
     </div>
   </div> <!-- /.innerWrapper -->
 </div> <!-- /.section -->
+
+<!--/*====================================================================================
+                              this 
+====================================================================================*/ -->
+<div class="section">
+  <span class="anchor" id="folio"></span>
+  <div class="innerWrapper">
+    <div class="full folio clearfix">
+      <?php $folio = new WP_Query(array(
+        "post_type"=>"portfolio"
+      )); ?>
+      <?php if ( $folio->have_posts() ) while ( $folio->have_posts() ) : $folio->the_post(); ?>
+           
+        <?php while(has_sub_field("images")) : ?>
+          <div class="tile">
+            <?php $image = get_sub_field("image"); ?>
+            <img src=" <?php echo $image["sizes"]["featured"] ?>" alt="">
+          </div>
+          <?php endwhile; // end images loop?>
+      <?php endwhile; // end of the loop. ?>      
+    </div>
+  </div>
+</div>
 
 <!-- /*====================================================================================
                               Contact Section Starts Here 

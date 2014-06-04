@@ -24,10 +24,10 @@
   h6.author {
     margin-bottom: 0;
   }
-  .postDeets {
+  .single-post .postDeets {
     position: static;    
     width: 100%;
-    }
+    
       .postDate {
         width: auto;
         height: auto;
@@ -57,6 +57,7 @@
           padding-left: 3px;
         }
       }
+    }  
 
   .postDate {
     width:auto;
@@ -185,6 +186,31 @@
     }
   }
 
+  //blog single
+  #respond {
+    padding-bottom: 10px;
+  }
+  
+  #respond .form-submit input, input.wpcf7-form-control.wpcf7-submit {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  bottom: -5px;
+  right: 40px;
+    &:hover {
+      width: 64px;
+      height: 64px;
+      bottom: -7px;
+      right: 38px;
+    }
+  }
+  input.wpcf7-form-control.wpcf7-submit {
+    bottom: 27px;
+    &:hover {
+      bottom: 25px;
+    }
+  }
+
 
   // footer 
     
@@ -233,15 +259,23 @@
                               560px 
 ====================================================================================*/ 
 @media (max-width: 560px) {
+  .section.sectHome {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .helloCircle {
     width: 100%;
     height: auto;
     border-radius: 0;
+    h1 {
+      font-size: 5rem;
+    }
     h1 span.name {
       position: static;
     }
     h2 {
       position: static;
+      line-height: 4rem;
     }
   }
 
@@ -290,6 +324,16 @@
     padding-left: 0;
   }
 
+  .helloCircle {
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 5px;
+    }
+    h2{
+      font-size: 3rem;
+      line-height: 3.4rem;
+    }
+  }
   h2 {
     margin-top: 20px;
     margin-bottom: 0;
@@ -322,25 +366,45 @@
       line-height: 5.5rem;
     }
   }
+  .blogNav {
+    text-align: center;
+    .nextPost {
+      width: 100%;
+      float: none;
+      margin-top: 7px;
+      svg {
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+      }
+      &:hover svg {
+        -webkit-transform: translateX(3px);
+        -ms-transform: translateX(3px);
+        transform: translateX(3px);
+      }
+    }
+    .prevPost {
+      width: 100%;
+      float: none;
+      svg {
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+      }
+      &:hover svg {
+        -webkit-transform: translateX(-3px);
+        -ms-transform: translateX(-3px);
+        transform: translateX(-3px);
+      }
+    }
+    .bubble-float-left:before, .bubble-float-right:before {
+      display: none;
+    }
 
-  #respond .form-submit input, input.wpcf7-form-control.wpcf7-submit {
-  font-size: 2rem;
-  width: 60px;
-  height: 60px;
-  bottom: -12px;
-  right: 40px;
-    &:hover {
-      width: 64px;
-      height: 64px;
-      bottom: -14px;
-      right: 38px;
+    .bubble-float-left:hover, .bubble-float-left:focus, .bubble-float-right:hover, .bubble-float-right:focus {
+      -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+      transform: translateX(0px);
     }
-  }
-  input.wpcf7-form-control.wpcf7-submit {
-    bottom: 27px;
-    &:hover {
-      bottom: 25px;
-    }
+
   }
 }
   

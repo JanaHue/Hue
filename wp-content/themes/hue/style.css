@@ -365,10 +365,6 @@ ul li a:hover, ul li a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5
 /*====================================================================================
                               backgrounds 
 ====================================================================================*/
-html {
-  background: url(i/stripe_c.png);
-}
-
 .page-id-281 .full, .full.about, .full.contact, .post, .comment-respond {
   background: white;
   padding: 30px 40px;
@@ -432,7 +428,7 @@ span.anchor {
                               Home Page 
 ====================================================================================*/
 .sectHome {
-  background: url(i/chair2.png) no-repeat center center fixed;
+  background: url(i/chair2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -470,9 +466,14 @@ span.anchor {
 /*====================================================================================
                               about 
 ====================================================================================*/
+.section.aboutMe {
+  background: url(i/stripe_c.png);
+  margin-top: 0;
+  padding: 50px 0;
+}
+
 .full.about {
   position: relative;
-  margin: 35px 0;
 }
 .full.about img {
   border-radius: 50%;
@@ -827,6 +828,16 @@ span.anchor {
   text-decoration: underline;
 }
 
+.tile {
+  width: 32%;
+  float: left;
+  margin: 25px 0;
+}
+.tile:nth-child(3n+2) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 /*====================================================================================
                               portfolio single 
 ====================================================================================*/
@@ -930,7 +941,8 @@ ul.skills li a {
 }
 
 p.foot {
-  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .touchIcons {
@@ -1055,11 +1067,14 @@ input[type="submit"] {
 }
 
 textarea {
+  border-bottom: 1px solid #231f20;
+  border-right: 1px solid #231f20;
   width: 100%;
   margin-top: 10px;
   border-top: 0;
   border-left: 0;
   padding-right: 33px;
+  resize: none;
 }
 textarea:focus {
   outline: none;

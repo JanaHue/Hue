@@ -23,12 +23,11 @@
     margin-bottom: 0;
   }
 
-  .postDeets {
+  .single-post .postDeets {
     position: static;
     width: 100%;
   }
-
-  .postDate {
+  .single-post .postDeets .postDate {
     width: auto;
     height: auto;
     border-radius: none;
@@ -37,7 +36,7 @@
     float: none;
     margin-bottom: 0;
   }
-  .postDate p {
+  .single-post .postDeets .postDate p {
     position: relative;
     text-align: left;
     top: 8px;
@@ -48,11 +47,11 @@
     float: left;
     font-weight: 700;
   }
-  .postDate p.day {
+  .single-post .postDeets .postDate p.day {
     font-weight: 400;
     font-size: 2.5rem;
   }
-  .postDate p.month {
+  .single-post .postDeets .postDate p.month {
     text-transform: none;
     padding-left: 3px;
   }
@@ -178,6 +177,31 @@
     font-size: 1rem;
   }
 
+  #respond {
+    padding-bottom: 10px;
+  }
+
+  #respond .form-submit input, input.wpcf7-form-control.wpcf7-submit {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    bottom: -5px;
+    right: 40px;
+  }
+  #respond .form-submit input:hover, input.wpcf7-form-control.wpcf7-submit:hover {
+    width: 64px;
+    height: 64px;
+    bottom: -7px;
+    right: 38px;
+  }
+
+  input.wpcf7-form-control.wpcf7-submit {
+    bottom: 27px;
+  }
+  input.wpcf7-form-control.wpcf7-submit:hover {
+    bottom: 25px;
+  }
+
   .footer {
     margin-top: 40px;
     padding-bottom: 0px;
@@ -216,16 +240,25 @@
                               560px 
 ====================================================================================*/
 @media (max-width: 560px) {
+  .section.sectHome {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .helloCircle {
     width: 100%;
     height: auto;
     border-radius: 0;
+  }
+  .helloCircle h1 {
+    font-size: 5rem;
   }
   .helloCircle h1 span.name {
     position: static;
   }
   .helloCircle h2 {
     position: static;
+    line-height: 4rem;
   }
 
   .polaroid {
@@ -276,6 +309,15 @@
     padding-left: 0;
   }
 
+  .helloCircle h1 {
+    font-size: 4rem;
+    margin-bottom: 5px;
+  }
+  .helloCircle h2 {
+    font-size: 3rem;
+    line-height: 3.4rem;
+  }
+
   h2 {
     margin-top: 20px;
     margin-bottom: 0;
@@ -311,24 +353,42 @@
     line-height: 5.5rem;
   }
 
-  #respond .form-submit input, input.wpcf7-form-control.wpcf7-submit {
-    font-size: 2rem;
-    width: 60px;
-    height: 60px;
-    bottom: -12px;
-    right: 40px;
+  .blogNav {
+    text-align: center;
   }
-  #respond .form-submit input:hover, input.wpcf7-form-control.wpcf7-submit:hover {
-    width: 64px;
-    height: 64px;
-    bottom: -14px;
-    right: 38px;
+  .blogNav .nextPost {
+    width: 100%;
+    float: none;
+    margin-top: 7px;
   }
-
-  input.wpcf7-form-control.wpcf7-submit {
-    bottom: 27px;
+  .blogNav .nextPost svg {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
   }
-  input.wpcf7-form-control.wpcf7-submit:hover {
-    bottom: 25px;
+  .blogNav .nextPost:hover svg {
+    -webkit-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  .blogNav .prevPost {
+    width: 100%;
+    float: none;
+  }
+  .blogNav .prevPost svg {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .blogNav .prevPost:hover svg {
+    -webkit-transform: translateX(-3px);
+    -ms-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  .blogNav .bubble-float-left:before, .blogNav .bubble-float-right:before {
+    display: none;
+  }
+  .blogNav .bubble-float-left:hover, .blogNav .bubble-float-left:focus, .blogNav .bubble-float-right:hover, .blogNav .bubble-float-right:focus {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }

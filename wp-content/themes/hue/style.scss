@@ -206,7 +206,7 @@ ul li a, h3 a, h4 a, h5 a, h6 a {
                               backgrounds 
 ====================================================================================*/ 
 html {
-  background:url(i/stripe_c.png);
+  // background:url(i/stripe_c.png);
 }
 
 .page-id-281 .full, .full.about, .full.contact, .post, .comment-respond{
@@ -275,7 +275,7 @@ span.anchor {
 ====================================================================================*/ 
 
 .sectHome {
-    background: url(i/chair2.png) no-repeat center center fixed; 
+    background: url(i/chair2.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -312,9 +312,14 @@ span.anchor {
 /*====================================================================================
                               about 
 ====================================================================================*/ 
+.section.aboutMe {
+  background:url(i/stripe_c.png);
+  margin-top: 0;
+  padding: 50px 0;
+}
 .full.about {
   position: relative;
-  margin: 35px 0;
+  // margin: 35px 0;
   img {
     border-radius: 50%;
     top: 40px;
@@ -688,6 +693,16 @@ span.anchor {
   }
 }
 
+.tile {
+  width:32%;
+  float: left;
+  margin: 25px 0;
+  &:nth-child(3n+2) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
 /*====================================================================================
                               portfolio single 
 ====================================================================================*/ 
@@ -790,7 +805,8 @@ ul.skills {
   float: left;
 }
 p.foot {
-  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 .touchIcons {
   width: 50%;
@@ -907,11 +923,14 @@ ul.socialite {
     }
   }
   textarea {
+    border-bottom: 1px solid $black;
+    border-right: 1px solid $black;
     width: 100%;
     margin-top: 10px;
     border-top:0;
     border-left: 0;
     padding-right: 33px;
+    resize: none;
     &:focus {
       outline:none;
     }
